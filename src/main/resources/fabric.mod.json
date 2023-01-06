@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "myhacks",
+  "version": "${version}",
+
+  "name": "MyHacks",
+  "description": "A test minecraft hack",
+  "authors": [
+    "darius172"
+  ],
+  "contact": {},
+
+  "license": "MIT",
+
+
+  "environment": "client",
+  "entrypoints": {
+
+
+    "main": [
+      "me.darius172.myhacks.MyHacks"
+    ]
+  },
+
+          "mixins": [
+        "MyHacks.mixins.json"
+      ],
+    
+  "depends": {
+    "fabricloader": ">=0.14.12",
+              "fabric": "*",
+          "minecraft": "1.19.2"
+  }
+}
