@@ -1,5 +1,6 @@
 package me.darius172.myhacks.mixin;
 
+import me.darius172.myhacks.MyHacks;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.vehicle.BoatEntity;
@@ -23,7 +24,8 @@ public class Rounding {
         double x = xR/100;
         double y = yR/100;
         double z = zR/100;
-        MinecraftClient.getInstance().player.setPosition(x,y,z);
+        if (MyHacks.PRounding == true){MinecraftClient.getInstance().player.setPosition(x,y,z);}
+
 
 
     }
